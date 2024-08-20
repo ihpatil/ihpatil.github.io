@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/06556ebc19.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshal Patil - Web and App Developer. Graduating from MGM University. Passionate about creating responsive and user-friendly websites.">
+    <meta name="keywords" content="Harshal Patil, web developer, app developer, MGM University, HTML, CSS, Bootstrap, SQL, responsive design">
+    <meta name="author" content="Harshal Patil">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://cdn.hdomain.in/website/harshal-patil/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Harshal Patil</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="display('sectionHome')">
+                <img src="https://cdn.hdomain.in/website/harshal-patil/img/HarshalLogo.png" class="logo-img" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="display('sectionHome')" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="display('sectionSkills')" href="#">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="display('sectionProjects')" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="display('sectionContact')" href="#">Contact me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-section">
+        <div class="container-fluid" id="sectionHome">
+            <div class="row d-none d-lg-block">
+                <div class="col-12 main-bg-congtainer d-flex flex-column justify-content-center text-center">
+                    <h1 class="name-heading">Harshal <<span class="patil">Patil</span>/></h1>
+                    <div class="d-block mt-5">
+                        <button class="skills-btn mr-2" onclick="display('sectionSkills')">View Expertise</button>
+                        <button class="skills-btn" onclick="display('sectionContact')">Contact me!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-block d-lg-none">
+                <div class="col-12 main-bgm-congtainer d-flex flex-column justify-content-center text-center">
+                    <h1 class="name-heading">Harshal <<span class="patil">Patil</span>/></h1>
+                    <div class="d-block d-lg-none mt-5">
+                        <button class="skills-btn mr-2" onclick="display('sectionSkills')">View Expertise</button>
+                        <button class="skills-btn" onclick="display('sectionContact')">Contact me!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section pt-5 pb-5">
+        <div class="container" id="sectionSkills">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="about-me">About me...</h1>
+                    <p class="about-me-d pt-2">
+                        My name is <<span class="patil">Harshal Patil</span>/>. I am a web and app designer &
+                            developer, and I'm very passionate to my work. Pursuing My
+                            graduation From MGM University.
+                    </p>
+                </div>
+
+                <div class="col-12">
+                    <h1 class="about-me pb-3 pt-3">Skills and Expertise : </h1>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/html.webp" class="about-card-img" />
+                        <h1 class="card-heading mt-3">HTML</h1>
+                        <p class="card-about">Certified in HTML, excels in creating well-structured and accessible web content.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/css.png" class="about-card-img" />
+                        <h1 class="card-heading mt-3">CSS</h1>
+                        <p class="card-about">With a certification in CSS, designs visually appealing and user-friendly web pages</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/bootstrap.png" class="about-card-img" />
+                        <h1 class="card-heading mt-3">Bootstrap</h1>
+                        <p class="card-about">Leverages Bootstrap to develop responsive websites that adapt seamlessly to all devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/sql.svg" class="about-card-img" />
+                        <h1 class="card-heading mt-3">SQL</h1>
+                        <p class="card-about">Skilled in SQL, capable of managing and querying databases efficiently to support dynamic web applications.</p>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/python.png" class="about-card-img" />
+                        <h1 class="card-heading mt-3">Python</h1>
+                        <p class="card-about">Proficient in Python, enabling the development of robust applications and automation scripts for various purposes.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/static.svg" class="about-card-img" />
+                        <h1 class="card-heading mt-3" style="font-size: 20px;">Static Website Development</h1>
+                        <p class="card-about">Specializes in static website development, building fast, secure, and easily maintainable sites.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="about-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/responsive.png" class="about-card-img" />
+                        <h1 class="card-heading mt-3" style="font-size: 20px;">Responsive Website Development</h1>
+                        <p class="card-about">Expertise in responsive design ensures optimal viewing experiences across all devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-5">
+                    <button class="projects-btn mr-2" onclick="display('sectionProjects')">View Projects</button>
+                    <button class="certify-btn mr-2" onclick="display('sectionCertify')">View Certificates</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section pb-5">
+        <div class="container" id="sectionProjects">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="about-me pb-3">Projects :</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/personal-portfolio.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Personal portfolio website</h1>
+                        <a href="#portfolio" onclick="showModalpp(); window.open( 'https://hpatil.in' )" class="projects-link">
+                            View
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/domains.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Domains & website services</h1>
+                        <a href="#dotify" onclick="showModaldot(); window.open( 'https://dotifynow.com' )" class="projects-link">
+                            View
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/coming-soon.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Many more...</h1>
+                        <a href="#soon" onclick="showModalsoon();" class="projects-link">
+                            Soon..
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-3">
+                    <button class="projects-btn mr-2" onclick="display('sectionContact')">Contact me!</button>
+                    <button class="certify-btn mr-2" onclick="display('sectionCertify')">View Certificates</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="container" id="sectionContact">
+            <div class="row">
+                <div class="col-12 pb-5">
+                    <h1 class="about-me text-center">
+                        Contact me!!
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="contact-card p-3 mb-3 shadow">
+                        <div class="mb-2">
+                            <img src="https://cdn.hdomain.in/website/harshal-patil/img/email.png" class="contact-card-img mr-2" />
+                            <span class="contact-card-h">Email</span>
+                        </div>
+                        <a class="contact-card-link" onclick="window.open( 'mailto:harshal@hpweb.org' )" href="#">harshal@hpweb.org</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="contact-card p-3 mb-3 shadow">
+                        <div class="mb-2">
+                            <img src="https://cdn.hdomain.in/website/harshal-patil/img/linkedin.png" class="contact-card-img mr-2" />
+                            <span class="contact-card-h">LinkedIn</span>
+                        </div>
+                        <a class="contact-card-link" onclick="window.open( 'https://www.linkedin.com/in/iampatil/' )" href="#">LinkedIn/iampatil</a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div id="contact">
+                        <h1 class="about-me" style="font-size: 22px;">Contact form.</h1>
+                        <form id="contactForm" action="https://formspree.io/f/meqyyaok" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="_replyto" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <button type="submit">Send</button>
+                            <button onclick="display('sectionHome')">Go back</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cerificate-section pb-5">
+        <div class="container" id="sectionCertify">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="about-me pb-3">Certificates :</h1>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/static-certificate.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Build your own static website</h1>
+                        <a href="#" onclick="window.open( 'https://certificates.ccbp.in/academy/static-website?id=LVQMSAVYUB' )" class="projects-link">
+                            Verify certificate
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/responsive-certificate.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Build your own responsive website</h1>
+                        <a href="#" onclick="window.open( 'https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=IJQXXJWADV' )" class="projects-link">
+                            Verify certificate
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/aws-certificate.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Deploying project on AWS</h1>
+                        <a href="#" onclick="window.open( 'https://cdn1.ccbp.in/misc/aws-workshop-completion-certificate/PF7MOBXOF5.png' )" class="projects-link">
+                            View certificate
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/data-analytics.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Data analytics dashboard</h1>
+                        <a href="#" onclick="window.open( 'https://cdn.hdomain.in/website/harshal-patil/img/data-analytics.png' )" class="projects-link">
+                            View certificate
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/cert/harshal-python.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Python Training (IIT Bombay)</h1>
+                        <a href="#" onclick="window.open( 'https://cdn.hdomain.in/cert/harshal-python.png' )" class="projects-link">
+                            View certificate
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="shadow projects-card p-3 mb-3">
+                        <img src="https://cdn.hdomain.in/website/harshal-patil/img/coming-soon.png" class="projects-card-img w-100" />
+                        <h1 class="projects-card-name">Coming Soon...</h1>
+                        <a href="#" class="projects-link">
+                            Soon
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-3">
+                    <button class="projects-btn mr-2" onclick="display('sectionSkills')">View Expertise</button>
+                    <button class="projects-btn mr-2" onclick="display('sectionProjects')">View Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.hdomain.in/website/harshal-patil/js/hpkit.js"></script>
+    <script type="text/javascript" src="https://cdn.hdomain.in/website/harshal-patil/js/blck.js"></script>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Message sent successfully!</p>
+        </div>
+    </div>
+    
+    <div id="ppModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalpp()">&times;</span>
+            <h2>Portfolio Development</h2>
+            <p><strong>Overview:</strong> I create custom portfolios to showcase your skills and achievements.</p>
+            <p><strong>Tailored Design:</strong> Each portfolio is uniquely designed to match your personal brand and goals.</p>
+            <p><strong>Key Features:</strong> Includes sections for bio, skills, projects, and more. Additional features available on request.</p>
+            <p><strong>Responsive:</strong> Portfolios are optimized for all devices.</p>
+            <p><strong>Collaboration:</strong> Your feedback guides the process from start to finish.</p>
+            <p><strong>Contact:</strong> Ready to start? Reach out <br><button class="projects-btn mr-2" onclick="closeModalpp(); display('sectionContact')">Contact me!</button> .</p>
+        </div>
+    </div>
+    
+    <div id="dotModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModaldot()">&times;</span>
+            <h2>Custom Website Development</h2>
+            <p><strong>Overview:</strong> I create tailored websites to meet your specific needs and goals.</p>
+            <p><strong>Design:</strong> Custom-designed to reflect your brand with a focus on functionality and aesthetics.</p>
+            <p><strong>Features:</strong> Includes responsive design, user-friendly navigation, and tool integration.</p>
+            <p><strong>Responsive:</strong> Optimized for all devices for a seamless experience.</p>
+            <p><strong>Process:</strong> Collaborate from concept to completion to realize your vision.</p>
+            <p><strong>Contact:</strong> Interested? <br><button class="projects-btn mr-2" onclick="closeModaldot(); display('sectionContact')">Contact me!</button></p>
+        </div>
+    </div>
+    
+    <div id="soonModal" class="modal">
+    <div class="modal-content">
+            <span class="close" onclick="closeModalsoon()">&times;</span>
+            <h2>Upcoming Projects</h2>
+            <p><strong>Update:</strong> I have developed many projects that are not listed here yet. I will be adding them to the website soon.</p>
+            <p><strong>Stay Tuned:</strong> Check back later for more information and updates on these projects.</p>
+            <p><strong>Contact:</strong> If you have any questions or need information about specific projects, feel free to <br><button class="projects-btn mr-2" onclick="closeModalsoon(); display('sectionContact')">Contact me!</button>.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
